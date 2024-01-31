@@ -676,6 +676,10 @@ textarea {
     border-radius: 10px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Fim Index Admin */
 
 /* Inicio Media Queries */

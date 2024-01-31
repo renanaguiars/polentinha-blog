@@ -19,6 +19,6 @@ addPostBtn.addEventListener('click', (event) => {
     
     event.preventDefault()
     
-    areaPost.removeAttribute('hidden')
+    areaPost.classList.toggle('hidden');
     
 })
