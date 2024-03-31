@@ -1089,7 +1089,7 @@ textarea {
   }
 
   .input-titulo-novo-post {
-    width: 200px;
+    width: 120px;
   }
 
   .input-data-novo-post {
@@ -1104,7 +1104,7 @@ textarea {
   }
 
   #txt-post {
-    width: 370px;
+    width: 300px;
     height: 180px;
   }
 
