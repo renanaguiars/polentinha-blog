@@ -1,4 +1,8 @@
-/* Limpar formatação padrão da página */
+:root {
+  --cor-de-fundo: #f0E68C;
+  --cor-primaria: #1C1C1C;
+  --cor-secundaria: #8B4513;
+}
 
 * {
   margin: 0;
@@ -8,7 +12,7 @@
 
 body {
   height: 100vh;
-  background: #f0e68c;
+  background-color: var(--cor-de-fundo);
   font-size: 16px;
   background-size: cover;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -19,7 +23,7 @@ body {
 /* Inicio Header  */
 
 #cabecalho {
-  background-color: #1c1c1c;
+  background-color: var(--cor-primaria);
   width: 100%;
 }
 
@@ -105,7 +109,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--cor-primaria);
 }
 
 a:hover {
@@ -114,7 +118,7 @@ a:hover {
 
 .destaque {
   font-weight: bold;
-  color: #8b4513;
+  color: var(--cor-secundaria);
 }
 
 /* Inicio area postagens */
@@ -155,7 +159,7 @@ a:hover {
 }
 
 .titulo-postagem {
-  color: #8b4513;
+  color: var(--cor-secundaria);
 }
 
 .data-postagem {
@@ -209,12 +213,12 @@ a:hover {
   margin: 10px;
   text-align: center;
   font-weight: bold;
-  background-color: #f0e68c;
+  background-color: var(--cor-de-fundo);
   border-radius: 10px;
 }
 
 .destaque-lateral {
-  color: #8b4513;
+  color: var(--cor-secundaria);
 }
 
 .conteudo-lateral {
@@ -228,7 +232,7 @@ a:hover {
 /* Inicio Footer  */
 
 #rodape {
-  background-color: #8b4513;
+  background-color: var(--cor-secundaria);
   padding: 30px;
   color: white;
   text-align: center;
@@ -250,7 +254,7 @@ a:hover {
 
 .icon-sm:hover {
   width: 45px;
-  box-shadow: 5px 5px black;
+  box-shadow: 5px 5px var(--cor-primaria);
   transition: 0.5s;
   border-radius: 10px;
 }
@@ -281,14 +285,11 @@ a:hover {
   border-radius: 15px;
   margin: 5px;
   border: 1px solid #cecece;
-  background-color: #f0e68c;
+  background-color: var(--cor-de-fundo);
 }
 
 .box-recado:hover {
-  width: 205px;
-  height: 155px;
-  box-shadow: 3px 3px black;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   transition: 0.5s;
 }
@@ -309,7 +310,7 @@ a:hover {
 }
 
 .titulo-mural {
-  color: #8b4513;
+  color: var(--cor-secundaria);
 }
 
 .form-m {
@@ -347,12 +348,12 @@ a:hover {
   background-color: #a0522d;
   color: white;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--cor-primaria);
 }
 
 .mural-btn:hover {
   cursor: pointer;
-  background-color: #8b4513;
+  background-color: var(--cor-secundaria);
 }
 
 label {
@@ -397,11 +398,11 @@ textarea {
   width: 213px;
   height: 180px;
   margin: 5px;
-  background-color: #f0e68c;
+  background-color: var(--cor-de-fundo);
 }
 
 .box-moldura:hover {
-  background-color: black;
+  background-color: var(--cor-primaria);
   transition: 0.25s;
 }
 
@@ -453,7 +454,7 @@ textarea {
   width: 200px;
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--cor-primaria);
   background-color: #eee;
 }
 
@@ -476,6 +477,7 @@ textarea {
 .item-apresentacao {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .radio-btn {
@@ -487,7 +489,7 @@ textarea {
   border-radius: 5px;
   padding: 5px;
   background-color: #eee;
-  border: 1px solid black;
+  border: 1px solid var(--cor-primaria);
 }
 
 .trabalhe-btn {
@@ -496,16 +498,17 @@ textarea {
   background-color: #a0522d;
   color: white;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--cor-primaria);
 }
 
 .trabalhe-btn:hover {
   cursor: pointer;
-  background-color: #8b4513;
+  background-color: var(--cor-secundaria);
 }
 
 #apresentacao {
-  width: 555px;
+  width: 595px;
+  padding-top: 50px;
   border-radius: 5px;
 }
 /* Fim Trabalhe Conosco */
@@ -518,7 +521,7 @@ textarea {
   border-radius: 5px;
   border: 1px solid whitesmoke;
   background-color: #eee;
-  box-shadow: 2px 2px black;
+  box-shadow: 2px 2px var(--cor-primaria);
 }
 
 #container-principal {
@@ -530,10 +533,10 @@ textarea {
 
 .container-login {
   width: 300px;
-  height: 320px;
+  height: 300px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 3px 3px black;
+  box-shadow: 3px 3px var(--cor-primaria);
 }
 
 .titulo-login {
@@ -587,8 +590,8 @@ textarea {
   padding: 10px;
   border-radius: 5px;
   width: 250px;
-  border: 1px solid black;
-  background-color: #1c1c1c;
+  border: 1px solid var(--cor-primaria);
+  background-color: var(--cor-primaria);
   color: white;
 }
 
@@ -601,13 +604,13 @@ textarea {
   padding: 10px;
   border-radius: 5px;
   width: 250px;
-  border: 1px solid black;
+  border: 1px solid var(--cor-primaria);
   background-color: #a0522d;
   color: white;
 }
 
 .cadastrar-button:hover {
-  background-color: #8b4513;
+  background-color: var(--cor-secundaria);
   cursor: pointer;
 }
 
@@ -645,14 +648,14 @@ textarea {
   border-radius: 5px;
   padding: 5px;
   background-color: #eee;
-  border: 1px solid black;
+  border: 1px solid var(--cor-primaria);
 }
 
 .input-data-novo-post {
   width: 200px;
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--cor-primaria);
   background-color: #eee;
 }
 
@@ -666,9 +669,9 @@ textarea {
 .form-area-btn {
   padding: 15px 35px;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid var(--cor-primaria);
   cursor: pointer;
-  box-shadow: 3px 3px black;
+  box-shadow: 3px 3px var(--cor-primaria);
 }
 
 #txt-post {
@@ -687,7 +690,7 @@ textarea {
   body {
     height: 100vh;
     width: 100vw;
-    background-color: #f0e68c;
+    background-color: var(--cor-de-fundo);
     font-size: 12px;
     background-size: cover;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -755,7 +758,7 @@ textarea {
 
   a {
     text-decoration: none;
-    color: black;
+    color: var(--cor-primaria);
   }
 
   #area-postagens {
@@ -805,7 +808,7 @@ textarea {
   }
 
   .titulo-postagem {
-    color: #8b4513;
+    color: var(--cor-secundaria);
   }
 
   .data-postagem {
@@ -863,13 +866,13 @@ textarea {
     margin: 10px;
     text-align: center;
     font-weight: bold;
-    background-color: #f0e68c;
+    background-color: var(--cor-de-fundo);
     border-radius: 10px;
     width: 330px;
   }
 
   .destaque-lateral {
-    color: #8b4513;
+    color: var(--cor-secundaria);
   }
 
   .conteudo-lateral {
@@ -1056,7 +1059,7 @@ textarea {
   }
 
   #rodape {
-    background-color: #8b4513;
+    background-color: var(--cor-secundaria);
     padding: 30px;
     color: white;
     text-align: center;
@@ -1078,7 +1081,7 @@ textarea {
 
   .icon-sm:hover {
     width: 45px;
-    box-shadow: 5px 5px black;
+    box-shadow: 5px 5px var(--cor-primaria);
     transition: 0.5s;
     border-radius: 10px;
   }
